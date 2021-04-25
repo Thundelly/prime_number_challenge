@@ -24,4 +24,4 @@ References: [Definition of prime numbers
 (Wikipedia)](https://en.wikipedia.org/wiki/Prime_number)
 
 When ready, please reply with a link to the
-[GitHub](https://www.github.com) repository containing your solution.
+[GitHub](https://github.com/Thundelly/prime_number_challenge) repository containing your solution.
