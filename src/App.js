@@ -19,7 +19,7 @@ const App = () => {
 
   const verifyPrime = () => {
 
-    if (!isNaN(num) && num !== '') {
+    if (!isNaN(num) && num !== '' && num % 1 === 0) {
       if (isPrime(num)) {
         setPrime(true);
       }
@@ -31,7 +31,13 @@ const App = () => {
     }
 
     else if (num === '') {
-      Alert.warning('Please enter a number to proceed.')
+      Alert.warning('Please enter a number to proceed.');
+      setShowResult(false);
+      setPrime(false);
+    }
+      
+    else if (num % 1 !== 0) {
+      Alert.warning('Please enter an integer number.');
       setShowResult(false);
       setPrime(false);
     }
